@@ -1,0 +1,7 @@
+  PV         VG      Fmt  Attr PSize   PFree  
+  /dev/sdc1  vgweb   lvm2 a--   <1.50g   8.00m
+  /dev/sdc2  vgweb   lvm2 a--   <3.50g  <3.00g
+  /dev/sdd2  vgdatos lvm2 a--   96.00m  96.00m
+  /dev/sdd3  vgdatos lvm2 a--  196.00m 196.00m
+  /dev/sdd5  vgdatos lvm2 a--  196.00m 196.00m
+  /dev/sdd6  vgdatos lvm2 a--    1.31g 844.00m

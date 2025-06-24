@@ -1,0 +1,55 @@
+    1  sudo fdisk -l
+    2  exit
+    3  sudo fdisk /dev/sdd
+    4  swapon -s
+    5  sudo swapoff /dev/sdd1
+    6  sudo fdisk /dev/sdd
+    7  lsblk
+    8  sudo fdisk /dev/sdd
+    9  sudo fdisk -l /dev/sdd
+   10  sudo fdisk /dev/sdd
+   11  lsblk
+   12  sudo fdisk -l /dev/sdd
+   13  sudo mkswap /dev/sdd1
+   14  sudo swapoff /dev/sdd1
+   15  sudo fdisk -l /dev/sdd
+   16  sudo mkswap /dev/sdd1
+   17  sudo fuser -v /dev/sdd1
+   18  sudo wipefs -a /dev/sdd1
+   19  sudo partprobe /dev/sdd
+   20  sudo mkswap /dev/sdd1
+   21  sudo fdisk /dev/sdd
+   22  sudo mkswap /dev/sdd1
+   23  sudo swapon /dev/sdd1
+   24  exit
+   25* 
+   26  mount | grep vgweb
+   27  sudo umount /var/www/html
+   28  sudo umount /var/log/web
+   29  mount | grep vgweb
+   30  sudo mkfs.ext4 -F /dev/vgweb/lv_web1
+   31  sudo mkfs.ext4 -F /dev/vgweb/lv_web2
+   32  sudo mkfs.ext4 -F /dev/vgweb/lv_web3
+   33  sudo mkdir -p /mnt/web1
+   34  sudo mkdir -p /mnt/web2
+   35  sudo mkdir -p /mnt/web3
+   36  sudo mount /dev/vgweb/lv_web1 /mnt/web1
+   37  sudo mount /dev/vgweb/lv_web2 /mnt/web2
+   38  sudo mount /dev/vgweb/lv_web3 /mnt/web3
+   39  sudo nano /etc/fstab
+   40  df -h | grep /mnt
+   41  sudo nano /etc/fstab
+   42  sudo umount /mnt/web1 /mnt/web2 /mnt/web3
+   43  sudo mount -a
+   44  sudo nano /etc/fstab
+   45  sudo umount /mnt/web1 /mnt/web2 /mnt/web3
+   46  sudo mount -a
+   47  df -h | grep /mnt
+   48  ls -l
+   49  git clone https://github.com/dufer47/TP2_AySO_Ferrara_Converti_Eduardo.git
+   50  ls -l
+   51  cd TP2_AySO_Ferrara_Converti_Eduardo/
+   52  sudo pvs > pvs.txt
+   53  sudo vgs > vgs.txt
+   54  sudo lvs > lvs.txt
+   55  history > historial_lvm.txt

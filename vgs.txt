@@ -1,0 +1,3 @@
+  VG      #PV #LV #SN Attr   VSize  VFree
+  vgdatos   4   1   0 wz--n- <1.79g 1.30g
+  vgweb     2   3   0 wz--n-  4.99g 3.00g
